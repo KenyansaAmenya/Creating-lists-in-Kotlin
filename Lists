@@ -1,0 +1,83 @@
+fun main(){
+    val list: List<String> = listOf("A", "B", "C")
+    println(list)
+    val ints: List<Int> = listOf(1,2,3)
+    println(ints)
+}
+
+// adding elements to lists
+fun main() {
+    val list = listOf("A", "B")
+    println(list + "C") // [A, B, C]
+    println(list + listOf("C", "D")) // [A,B,C,D]
+    println(listOf("Z") + list) // [Z, A, B]
+}
+
+//getting the size of a list
+fun main() {
+    val list = listOf("A", "B", "C")
+    println(list.size)
+}
+
+// to check if a list is empty
+fun main() {
+    val list = listOf("A", "B", "C")
+    println(list.size == 0)
+    println(list.isEmpty())
+
+    val empty: Set<Int> = setOf()
+    println(empty.size == 0)
+    println(empty.isEmpty())
+}
+
+// Getting elements at certain positions by using box brackets []
+fun main() {
+    val list = listOf("A", "B", "C")
+    println(list[0])
+    println(list[1])
+    println(list[2])
+}
+
+// checking if a list contains an element by using 'contains' method or the 'in' operator
+fun main() {
+    val letters = listOf("A", "B", "C")
+    println(list.contains("A"))
+    println(list.contains("Z"))
+    println("A" in list)
+    println("Z" in list)
+}
+
+// checking if a collection does not contain an element using the !in operator
+
+fun main() {
+    val letters = listOf("A", "B", "C")
+    println("A" !in list)
+    println("Z" !in list)
+}
+
+// iterating over lists using for loops
+
+fun main() {
+    val letters = listOf("A", "B", "C")
+    for (letter in letters) {
+        print(letter)
+    }
+}
+
+//using mutable list by using 'mutableListOf'
+
+fun main() {
+    val list = mutableListOf("A", "B")
+    list.add("C")
+    println(list)
+    list.remove("B")
+    println(list)
+}
+
+// you can also change an element at a certain position using box brackets with index & assignment.
+
+fun main() {
+    val list = mutableListOf("A", "B", "C")
+    list[1] = "Z"
+    println(list)
+}
